@@ -109,7 +109,7 @@ export default function Home() {
       </Section>
 
       {/* 5. SOCIAL MEDIA WORK */}
-      <Section id="social" eyebrow="Social Media" title="Posts I've created" intro="Live posts from @fendodo_, written in Mandarin for students and parents in Taiwan.">
+      <Section id="social" eyebrow="Social Media" title="Posts I've created" intro="Reels and carousel posts I created for @fendodo_, written in Mandarin for students and parents in Taiwan. Swipe the carousels or play the reels right here.">
         <div className="grid items-start gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {socialPosts.map((post, i) => (
             <Reveal key={post.instagram ?? post.image} delay={(i % 3) * 80}>

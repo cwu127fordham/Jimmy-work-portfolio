@@ -282,6 +282,21 @@ export const socialPosts: SocialPost[] = [
     instagram: "DfvtEOwBE-e",
     caption: "Lead-generation post: comment 「模考」 to get a free Digital SAT mock exam.",
   },
+  {
+    title: "UC GPA explainer (carousel)",
+    instagram: "Dfldylyj8ME",
+    caption: "Why a 4.2 GPA can become a 3.8 under UC rules, with a CTA to book a free admissions consultation.",
+  },
+  {
+    title: "Beyond the rankings (carousel)",
+    instagram: "DeVheszAXsw",
+    caption: "Four factors that matter more than U.S. News rankings when choosing a college.",
+  },
+  {
+    title: "Common App tips (carousel)",
+    instagram: "DdkgUJGCfLt",
+    caption: "How to use the Common App \"Additional Information\" section, with mistakes vs. right way slides.",
+  },
 ];
 
 /* ---------- Writing (blog posts) ------------------------------------- */
