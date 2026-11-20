@@ -12,8 +12,7 @@
 export const site = {
   name: "Jimmy Wu",
   fullName: "Chuan Hsi (Jimmy) Wu",
-  // TODO: after deploying, replace with your real address (e.g. https://jimmywu.vercel.app)
-  url: "https://jimmywu.vercel.app",
+  url: "https://chuanhsiwu.vercel.app",
   // The title + description show up in Google results and LinkedIn/email link previews.
   title: "Jimmy Wu | Marketing & AI-Powered Content",
   description:
