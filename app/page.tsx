@@ -136,8 +136,8 @@ export default function Home() {
       </Section>
 
       {/* 6. WRITING */}
-      <Section id="writing" eyebrow="Writing" title="Articles & blog posts">
-        <div className="grid gap-6 md:grid-cols-2">
+      <Section id="writing" eyebrow="Writing" title="Articles & blog posts" intro="Blog posts I wrote for GreenPortfolio on climate-conscious investing and financial advice.">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {writing.map((post, i) => (
             <Reveal key={post.title + i} delay={i * 80}>
               <a href={post.url} target="_blank" rel="noopener noreferrer" className="group flex h-full flex-col rounded-2xl border border-line bg-card p-6 transition-colors hover:border-accent">
@@ -154,8 +154,8 @@ export default function Home() {
       </Section>
 
       {/* 7. VIDEOS */}
-      <Section id="videos" eyebrow="Videos" title="Video work">
-        <div className="grid items-start gap-10 md:grid-cols-2">
+      <Section id="videos" eyebrow="Videos" title="Video work" intro="Blog posts I turned into YouTube videos for GreenPortfolio using Google Vids, with AI voiceovers matched to brand guidelines.">
+        <div className="grid items-start gap-10 md:grid-cols-2 lg:grid-cols-3">
           {videos.map((v, i) => <Reveal key={i}><VideoEmbed video={v} /></Reveal>)}
         </div>
       </Section>

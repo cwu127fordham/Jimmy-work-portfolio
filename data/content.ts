@@ -87,10 +87,10 @@ export const experience: Experience[] = [
   {
     role: "Marketing Intern",
     company: "GreenPortfolio",
-    companyUrl: "https://greenportfolio.co", // TODO: confirm company URL
+    companyUrl: "https://greenportfolio.com",
     location: "New York, NY",
     dates: "January – September 2026",
-    summary: "Climate-conscious investing and financial advice platform.", // TODO: confirm wording
+    summary: "Climate-conscious investing and financial advice platform.",
     bullets: [
       "Produced 8 blog posts on climate-conscious investing (fiduciary advisors, advisor fees, choosing a climate-savvy advisor, midlife wealth planning), driving a 28% increase in organic web traffic",
       "Turned blog posts into 5 YouTube videos with Google Vids, refining AI voiceovers and aligning each scene with brand color guidelines",
@@ -236,16 +236,16 @@ export const caseStudies: CaseStudy[] = [
     ],
     resultsNote: "January – September 2026.",
     videos: [
-      // TODO: paste the ID from youtube.com/watch?v=THIS_PART
-      { title: "TODO: GreenPortfolio video title", platform: "youtube", id: "TODO" },
-      { title: "TODO: GreenPortfolio video title", platform: "youtube", id: "TODO" },
+      // The ID from youtube.com/watch?v=THIS_PART
+      { title: "ESG vs. Climate-Smart Investing: Are Your Green Investments Actually Green?", platform: "youtube", id: "MLfL8I4Qbec" },
+      { title: "Can AI Be Your Financial Advisor?", platform: "youtube", id: "cjYWlmlztqs" },
+      { title: "When to Switch Financial Advisors: 5 Signs Your Wealth Isn't Aligned With Your Values", platform: "youtube", id: "L4jp6T7JpkM" },
     ],
     linksHeading: "Writing samples",
     links: [
-      // TODO: replace with your real articles
-      { title: "TODO: exact title (fiduciary advisors post)", description: "TODO: one-sentence summary.", url: "https://example.com" },
-      { title: "TODO: exact title (advisor fees post)", description: "TODO: one-sentence summary.", url: "https://example.com" },
-      { title: "TODO: exact title (choosing a climate-savvy advisor post)", description: "TODO: one-sentence summary.", url: "https://example.com" },
+      { title: "What is a Fiduciary Financial Advisor?", description: "Most people don't realize their advisor isn't legally required to act in their best interest. What fiduciary really means and why it matters for sustainable investors.", url: "https://greenportfolio.com/blog/what-is-a-fiduciary-financial-advisor/" },
+      { title: "Understanding Financial Advisor Fees: Impact on Returns and Choosing the Right Structure", description: "How common advisor fee structures work, how costs compound over time, and how to find a climate-aligned advisor who fits your budget.", url: "https://greenportfolio.com/blog/financial-advisor-fees-explained/" },
+      { title: "How to Choose a Climate-Savvy Financial Advisor in 2026", description: "A five-step guide to finding an advisor who takes climate seriously, plus a downloadable interview checklist.", url: "https://greenportfolio.com/blog/choose-climate-savvy-financial-advisor-2026/" },
     ],
   },
 ];
@@ -301,34 +301,41 @@ export const socialPosts: SocialPost[] = [
 
 /* ---------- Writing (blog posts) ------------------------------------- */
 export const writing: { title: string; excerpt: string; date: string; publication: string; url: string }[] = [
-  // You wrote 8 posts. Add the rest by copying a block.
+  // Newest first. To add a post, copy a block. Dates are YYYY-MM-DD.
   {
-    title: "TODO: exact title (fiduciary advisors post)",
-    excerpt: "TODO: a two-sentence excerpt that makes a reader want to click through.",
-    date: "2026-02-01", // TODO: real date (YYYY-MM-DD)
+    title: "Building Wealth in Your 40s and 50s: Sustainable Investing Strategies",
+    excerpt: "How midlife investors can align 401(k)s, IRAs, and taxable accounts with long-term climate priorities, with practical strategies for peak earning years.",
+    date: "2026-08-21",
     publication: "GreenPortfolio Blog",
-    url: "https://example.com", // TODO
+    url: "https://greenportfolio.com/blog/building-sustainable-wealth-40s-50s/",
   },
   {
-    title: "TODO: exact title (advisor fees post)",
-    excerpt: "TODO: a two-sentence excerpt that makes a reader want to click through.",
-    date: "2026-03-01", // TODO: real date (YYYY-MM-DD)
+    title: "Understanding Financial Advisor Fees: Impact on Returns and Choosing the Right Structure",
+    excerpt: "How common advisor fee structures work, how costs compound over time, and how to find a climate-aligned advisor who fits your budget.",
+    date: "2026-07-29",
     publication: "GreenPortfolio Blog",
-    url: "https://example.com", // TODO
+    url: "https://greenportfolio.com/blog/financial-advisor-fees-explained/",
   },
   {
-    title: "TODO: exact title (choosing a climate-savvy advisor post)",
-    excerpt: "TODO: a two-sentence excerpt that makes a reader want to click through.",
-    date: "2026-05-01", // TODO: real date (YYYY-MM-DD)
+    title: "What a Financial Advisor Really Does (And How They Can Help You)",
+    excerpt: "From retirement planning to climate-smart investing: what advisors actually do and how to align your wealth with your values.",
+    date: "2026-05-28",
     publication: "GreenPortfolio Blog",
-    url: "https://example.com", // TODO
+    url: "https://greenportfolio.com/blog/what-a-financial-advisor-does-climate-investing/",
   },
   {
-    title: "TODO: exact title (midlife wealth planning post)",
-    excerpt: "TODO: a two-sentence excerpt that makes a reader want to click through.",
-    date: "2026-07-01", // TODO: real date (YYYY-MM-DD)
+    title: "What is a Fiduciary Financial Advisor?",
+    excerpt: "Most people don't realize their advisor isn't legally required to act in their best interest. What fiduciary really means and why it matters for sustainable investors.",
+    date: "2026-04-15",
     publication: "GreenPortfolio Blog",
-    url: "https://example.com", // TODO
+    url: "https://greenportfolio.com/blog/what-is-a-fiduciary-financial-advisor/",
+  },
+  {
+    title: "How to Choose a Climate-Savvy Financial Advisor in 2026",
+    excerpt: "A five-step guide to finding an advisor who takes climate seriously, plus a downloadable interview checklist.",
+    date: "2026-02-24",
+    publication: "GreenPortfolio Blog",
+    url: "https://greenportfolio.com/blog/choose-climate-savvy-financial-advisor-2026/",
   },
 ];
 
@@ -337,7 +344,9 @@ export const writing: { title: string; excerpt: string; date: string; publicatio
    Vimeo, or Instagram and paste the ID here (see the Video type above).
    --------------------------------------------------------------------- */
 export const videos: Video[] = [
-  { title: "TODO: GreenPortfolio video title", platform: "youtube", id: "TODO", description: "Blog post turned into a YouTube video with Google Vids and an AI voiceover." },
+  { title: "ESG vs. Climate-Smart Investing: Are Your Green Investments Actually Green?", platform: "youtube", id: "MLfL8I4Qbec", description: "GreenPortfolio, made with Google Vids and an AI voiceover." },
+  { title: "Can AI Be Your Financial Advisor?", platform: "youtube", id: "cjYWlmlztqs", description: "GreenPortfolio, made with Google Vids and an AI voiceover." },
+  { title: "When to Switch Financial Advisors: 5 Signs Your Wealth Isn't Aligned With Your Values", platform: "youtube", id: "L4jp6T7JpkM", description: "GreenPortfolio, made with Google Vids and an AI voiceover." },
 ];
 
 /* ---------- Skills & Tools ------------------------------------------- */
