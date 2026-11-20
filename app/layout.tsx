@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: { default: site.title, template: `%s | ${site.name}` },
   description: site.description,
-  keywords: ["Jimmy Wu", "marketing", "AI content", "social media", "bilingual", "Mandarin", "Fordham Gabelli", "portfolio"],
+  keywords: [site.name, site.alternateName, "marketing", "AI content", "social media", "bilingual", "Mandarin", "Fordham Gabelli", "portfolio"],
   authors: [{ name: site.fullName }],
   openGraph: {
     type: "website",
@@ -35,6 +35,7 @@ const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: site.fullName,
+  alternateName: site.alternateName,
   url: site.url,
   description: hero.positioning,
   alumniOf: "Fordham University, Gabelli School of Business",

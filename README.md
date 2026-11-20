@@ -1,4 +1,4 @@
-# Jimmy Wu: Portfolio
+# Chuan Hsi Wu: Portfolio
 
 Next.js + TypeScript + Tailwind CSS, deployed on Vercel.
 

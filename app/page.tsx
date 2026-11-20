@@ -39,7 +39,7 @@ export default function Home() {
       </section>
 
       {/* 2. ABOUT */}
-      <Section id="about" eyebrow="About" title="Hi, I'm Jimmy.">
+      <Section id="about" eyebrow="About" title={about.greeting}>
         <div className="grid gap-12 md:grid-cols-[1.6fr_1fr]">
           <Reveal className="space-y-5 text-lg leading-relaxed">
             {about.paragraphs.map((p, i) => <p key={i}>{p}</p>)}

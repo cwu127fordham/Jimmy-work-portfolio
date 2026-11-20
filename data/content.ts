@@ -10,13 +10,14 @@
 
 /* ---------- Basic info (used in the nav, footer, and link previews) --- */
 export const site = {
-  name: "Jimmy Wu",
-  fullName: "Chuan Hsi (Jimmy) Wu",
+  name: "Chuan Hsi Wu",
+  fullName: "Chuan Hsi Wu",
+  alternateName: "Jimmy Wu", // not shown on the page; helps people who search this name find you
   url: "https://chuanhsiwu.vercel.app",
   // The title + description show up in Google results and LinkedIn/email link previews.
-  title: "Jimmy Wu | Marketing & AI-Powered Content",
+  title: "Chuan Hsi Wu | Marketing & AI-Powered Content",
   description:
-    "Portfolio of Jimmy Wu, a bilingual (English/Mandarin) Global Business Marketing student at Fordham Gabelli, creating AI-powered content that grows audiences.",
+    "Portfolio of Chuan Hsi Wu, a bilingual (English/Mandarin) Global Business Marketing student at Fordham Gabelli, creating AI-powered content that grows audiences.",
   email: "cwu127@fordham.edu",
   linkedin: "https://www.linkedin.com/in/chuan-hsi-jimmy-wu/",
   instagram: "", // optional: your personal Instagram URL. Leave "" to hide the Instagram links.
@@ -32,11 +33,12 @@ export const hero = {
   // Option 2: "I create scroll-stopping content with AI tools, and tell brand stories in two languages."
   // Option 3: "Marketing student at the intersection of creativity, AI, and cross-cultural storytelling."
   headshot: "/images/headshot.jpg", // portrait (4:5) photo
-  headshotAlt: "Portrait of Jimmy Wu",
+  headshotAlt: "Portrait of Chuan Hsi Wu",
 };
 
 /* ---------- About ---------------------------------------------------- */
 export const about = {
+  greeting: "Hi, I'm Chuan Hsi.",
   paragraphs: [
     "I'm a Global Business Marketing major with a Music minor at Fordham University's Gabelli School of Business, graduating in May 2027. I'm drawn to the part of marketing where data meets storytelling: figuring out what an audience actually cares about, then making content they want to stop and watch.",
     "Lately that's meant building AI into everything I make. At FenDoDo Education I produce short-form reels with Higgsfield AI to grow our Instagram audience, and at GreenPortfolio I turned blog posts into YouTube videos with Google Vids and used Gemini and Perplexity to speed up SEO and research.",
