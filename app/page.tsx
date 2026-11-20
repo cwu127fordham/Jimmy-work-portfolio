@@ -183,7 +183,7 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap gap-3">
             <a href={site.resume} target="_blank" rel="noopener noreferrer" className={btnPrimary}>View Resume</a>
-            <a href={site.resume} download className={btnSecondary}>Download PDF</a>
+            <a href={site.resume} download="Chuan_Hsi_Wu_Resume.pdf" className={btnSecondary}>Download PDF</a>
           </div>
         </Reveal>
       </section>

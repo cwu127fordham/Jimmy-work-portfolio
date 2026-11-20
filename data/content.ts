@@ -20,7 +20,7 @@ export const site = {
   email: "cwu127@fordham.edu",
   linkedin: "https://www.linkedin.com/in/chuan-hsi-jimmy-wu/",
   instagram: "", // optional: your personal Instagram URL. Leave "" to hide the Instagram links.
-  resume: "/resume.pdf", // TODO: replace /public/resume.pdf with your real resume
+  resume: "/resume.pdf", // to update: replace /public/resume.pdf (keep the name)
 };
 
 /* ---------- Hero (the first thing visitors see) ----------------------- */
