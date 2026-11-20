@@ -1,26 +1,70 @@
 @import "tailwindcss";
 
+/* Dark mode is switched by adding class="dark" to <html> (handled by the toggle). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---- Site colors. Change --accent to rebrand the whole site. ---- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #fbfaf8;
+  --fg: #16161d;
+  --muted: #5c5f6a;
+  --card: #ffffff;
+  --border: #e6e3de;
+  --accent: #4338ca;      /* deep indigo */
+  --accent-soft: #eef0ff;
+  --accent-fg: #ffffff;
+}
+.dark {
+  --bg: #0e0f13;
+  --fg: #ecebe8;
+  --muted: #a1a3ad;
+  --card: #17181e;
+  --border: #2a2c35;
+  --accent: #a5b4fc;
+  --accent-soft: #1d1f33;
+  --accent-fg: #0e0f13;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-line: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-fg: var(--accent-fg);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem; /* so section titles aren't hidden under the sticky nav */
 }
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  background: var(--accent);
+  color: var(--accent-fg);
+}
+
+/* Subtle fade-up animation used by <Reveal> */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Respect visitors who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
 }
