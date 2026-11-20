@@ -137,7 +137,7 @@ export type Video = {
   title: string;
   // "youtube" → the ID from youtube.com/watch?v=THIS_PART
   // "vimeo"   → the number from vimeo.com/THIS_PART
-  // "instagram" → the code from instagram.com/reel/THIS_PART/
+  // "instagram" → the code from instagram.com/p/THIS_PART/ (or /reel/THIS_PART/)
   platform: "youtube" | "vimeo" | "instagram";
   id: string; // leave as "TODO" to show a placeholder box
   description?: string;
@@ -195,10 +195,10 @@ export const caseStudies: CaseStudy[] = [
     ],
     resultsNote: "TODO: add timeframe, e.g. \"From July 2025 to November 2026.\"",
     videos: [
-      // TODO: paste the code from each reel URL: instagram.com/reel/THIS_PART/
-      { title: "Example reel 1", platform: "instagram", id: "TODO" },
-      { title: "Example reel 2", platform: "instagram", id: "TODO" },
-      { title: "Example reel 3", platform: "instagram", id: "TODO" },
+      // The code from each post URL: instagram.com/p/THIS_PART/
+      { title: "AP success story", platform: "instagram", id: "DfQ3h1Pir9n", description: "Turns a student's results into an emotional before-and-after story." },
+      { title: "SAT platform launch", platform: "instagram", id: "DfbKofXDDt0", description: "Announces prep.fendodo.net and its weak-spot diagnostics." },
+      { title: "Free mock exam offer", platform: "instagram", id: "DfvtEOwBE-e", description: "Comment-to-claim call to action that drives leads to FenDoDo's LINE account." },
     ],
     images: [
       {
@@ -251,16 +251,37 @@ export const caseStudies: CaseStudy[] = [
 ];
 
 /* ---------- Social Media Work (gallery) -------------------------------
-   Put screenshots in /public/images/social/. Portrait (4:5) looks best.
-   caption and url are optional — delete those lines if not needed.
+   Two ways to add a post:
+   1. Live Instagram embed: set instagram to the code in the post URL,
+      e.g. instagram.com/p/THIS_PART/  (works for posts and reels)
+   2. Screenshot: put the image in /public/images/social/ and set image + alt
+      (portrait 4:5 looks best). url is optional and links to the live post.
    --------------------------------------------------------------------- */
-export const socialPosts: { image: string; alt: string; caption?: string; url?: string }[] = [
-  { image: "/images/social/post-1.svg", alt: "TODO: describe the post", caption: "TODO: caption", url: "https://www.instagram.com/fendodo_/" },
-  { image: "/images/social/post-2.svg", alt: "TODO: describe the post", caption: "TODO: caption", url: "https://www.instagram.com/fendodo_/" },
-  { image: "/images/social/post-3.svg", alt: "TODO: describe the post", caption: "TODO: caption", url: "https://www.instagram.com/fendodo_/" },
-  { image: "/images/social/post-4.svg", alt: "TODO: describe the post", caption: "TODO: caption" },
-  { image: "/images/social/post-5.svg", alt: "TODO: describe the post", caption: "TODO: caption" },
-  { image: "/images/social/post-6.svg", alt: "TODO: describe the post" },
+export type SocialPost = {
+  title?: string;
+  instagram?: string;
+  image?: string;
+  alt?: string;
+  caption?: string;
+  url?: string;
+};
+
+export const socialPosts: SocialPost[] = [
+  {
+    title: "AP success story",
+    instagram: "DfQ3h1Pir9n",
+    caption: "Student success story (Mandarin): from a 1 on an AP mock exam to a 5 after 20 hours of tutoring.",
+  },
+  {
+    title: "SAT platform launch",
+    instagram: "DfbKofXDDt0",
+    caption: "Launch post for prep.fendodo.net, FenDoDo's Digital SAT practice platform.",
+  },
+  {
+    title: "Free mock exam offer",
+    instagram: "DfvtEOwBE-e",
+    caption: "Lead-generation post: comment 「模考」 to get a free Digital SAT mock exam.",
+  },
 ];
 
 /* ---------- Writing (blog posts) ------------------------------------- */
@@ -302,7 +323,6 @@ export const writing: { title: string; excerpt: string; date: string; publicatio
    --------------------------------------------------------------------- */
 export const videos: Video[] = [
   { title: "TODO: GreenPortfolio video title", platform: "youtube", id: "TODO", description: "Blog post turned into a YouTube video with Google Vids and an AI voiceover." },
-  { title: "TODO: FenDoDo reel title", platform: "instagram", id: "TODO", description: "AI-generated reel made with Higgsfield AI for @fendodo_." },
 ];
 
 /* ---------- Skills & Tools ------------------------------------------- */

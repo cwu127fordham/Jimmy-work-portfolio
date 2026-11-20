@@ -1,4 +1,5 @@
 import type { Video } from "@/data/content";
+import InstagramEmbed from "./InstagramEmbed";
 
 // Shows a YouTube, Vimeo, or Instagram video. If the id is still "TODO", shows a placeholder box.
 export default function VideoEmbed({ video }: { video: Video }) {
@@ -11,7 +12,20 @@ export default function VideoEmbed({ video }: { video: Video }) {
       ? `https://www.youtube-nocookie.com/embed/${video.id}`
       : video.platform === "vimeo"
         ? `https://player.vimeo.com/video/${video.id}`
-        : `https://www.instagram.com/reel/${video.id}/embed`;
+        : "";
+
+  // Real Instagram posts use Instagram's official embed, which sizes itself.
+  if (video.platform === "instagram" && !isPlaceholder) {
+    return (
+      <figure className="mx-auto w-full max-w-[400px]">
+        <InstagramEmbed id={video.id} />
+        <figcaption className="mt-3">
+          <p className="font-medium">{video.title}</p>
+          {video.description && <p className="mt-1 text-sm text-muted">{video.description}</p>}
+        </figcaption>
+      </figure>
+    );
+  }
 
   return (
     <figure className={vertical ? "mx-auto w-full max-w-[340px]" : ""}>

@@ -109,26 +109,30 @@ export default function Home() {
       </Section>
 
       {/* 5. SOCIAL MEDIA WORK */}
-      <Section id="social" eyebrow="Social Media" title="Posts I've created">
-        <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3">
-          {socialPosts.map((post, i) => {
-            const inner = (
-              <>
-                <Img src={post.image} alt={post.alt} width={540} height={675} className="aspect-[4/5] w-full rounded-xl border border-line object-cover transition-opacity group-hover:opacity-90" />
-                {post.caption && <figcaption className="mt-2 text-sm text-muted">{post.caption}</figcaption>}
-              </>
-            );
-            return (
-              <Reveal key={post.image} delay={(i % 3) * 80}>
+      <Section id="social" eyebrow="Social Media" title="Posts I've created" intro="Live posts from @fendodo_, written in Mandarin for students and parents in Taiwan.">
+        <div className="grid items-start gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {socialPosts.map((post, i) => (
+            <Reveal key={post.instagram ?? post.image} delay={(i % 3) * 80}>
+              {post.instagram ? (
+                <VideoEmbed video={{ platform: "instagram", id: post.instagram, title: post.title ?? `Instagram post ${i + 1}`, description: post.caption }} />
+              ) : (
                 <figure>
                   {post.url ? (
-                    <a href={post.url} target="_blank" rel="noopener noreferrer" className="group block" aria-label={`${post.alt} (opens the live post)`}>{inner}</a>
-                  ) : inner}
+                    <a href={post.url} target="_blank" rel="noopener noreferrer" className="group block" aria-label={`${post.alt} (opens the live post)`}>
+                      <Img src={post.image!} alt={post.alt ?? ""} width={540} height={675} className="aspect-[4/5] w-full rounded-xl border border-line object-cover transition-opacity group-hover:opacity-90" />
+                    </a>
+                  ) : (
+                    <Img src={post.image!} alt={post.alt ?? ""} width={540} height={675} className="aspect-[4/5] w-full rounded-xl border border-line object-cover" />
+                  )}
+                  {post.caption && <figcaption className="mt-2 text-sm text-muted">{post.caption}</figcaption>}
                 </figure>
-              </Reveal>
-            );
-          })}
+              )}
+            </Reveal>
+          ))}
         </div>
+        <p className="mt-10 text-center">
+          <a href="https://www.instagram.com/fendodo_/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-accent hover:underline">See more on @fendodo_ ↗</a>
+        </p>
       </Section>
 
       {/* 6. WRITING */}
