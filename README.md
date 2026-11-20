@@ -3,7 +3,7 @@
 Next.js + TypeScript + Tailwind CSS, deployed on Vercel.
 
 ## Updating your content
-Almost everything lives in **`data/content.ts`**. Search it for `TODO`.
+Almost everything lives in **`data/content.ts`**. Search it for `TODO`. See **[TODO.md](TODO.md)** for the full checklist.
 
 | What | Where |
 |---|---|
