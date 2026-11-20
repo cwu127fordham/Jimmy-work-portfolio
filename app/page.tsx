@@ -33,7 +33,7 @@ export default function Home() {
         <Reveal delay={150} className="mx-auto w-full max-w-[260px] sm:max-w-sm">
           <div className="relative">
             <div className="absolute -inset-3 -z-10 rotate-3 rounded-[2rem] bg-accent-soft" aria-hidden="true" />
-            <Img src={hero.headshot} alt={hero.headshotAlt} width={600} height={600} priority className="aspect-square w-full rounded-[1.75rem] object-cover" />
+            <Img src={hero.headshot} alt={hero.headshotAlt} width={900} height={1125} priority className="aspect-[4/5] w-full rounded-[1.75rem] object-cover" />
           </div>
         </Reveal>
       </section>
@@ -58,7 +58,7 @@ export default function Home() {
       </Section>
 
       {/* 3. EXPERIENCE */}
-      <Section id="experience" eyebrow="Experience" title="Where I've worked">
+      <Section id="experience" eyebrow="Experience" title="What I've been doing">
         <ol className="space-y-6">
           {experience.map((job) => (
             <li key={job.company}>
@@ -133,7 +133,7 @@ export default function Home() {
 
       {/* 6. WRITING */}
       <Section id="writing" eyebrow="Writing" title="Articles & blog posts">
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {writing.map((post, i) => (
             <Reveal key={post.title + i} delay={i * 80}>
               <a href={post.url} target="_blank" rel="noopener noreferrer" className="group flex h-full flex-col rounded-2xl border border-line bg-card p-6 transition-colors hover:border-accent">
@@ -186,12 +186,12 @@ export default function Home() {
 
       {/* 10. CONTACT */}
       <Section id="contact" eyebrow="Contact" title="Let's talk" intro="I'm looking for marketing internship opportunities. The best way to reach me is email. I usually reply within a day.">
-        <Reveal className="grid gap-4 sm:grid-cols-3">
+        <Reveal className={`grid gap-4 ${site.instagram ? "sm:grid-cols-3" : "sm:grid-cols-2"}`}>
           {[
             { label: "Email", value: site.email, href: `mailto:${site.email}` },
             { label: "LinkedIn", value: "Connect on LinkedIn", href: site.linkedin },
             { label: "Instagram", value: "Follow on Instagram", href: site.instagram },
-          ].map((c) => (
+          ].filter((c) => c.href).map((c) => (
             <a
               key={c.label}
               href={c.href}

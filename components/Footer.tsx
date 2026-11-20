@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex gap-5">
           <a href={`mailto:${site.email}`} className="hover:text-fg">Email</a>
           <a href={site.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-fg">LinkedIn</a>
-          <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-fg">Instagram</a>
+          {site.instagram && <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-fg">Instagram</a>}
         </div>
       </div>
     </footer>

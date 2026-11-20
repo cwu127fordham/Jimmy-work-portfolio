@@ -17,9 +17,9 @@ export const site = {
   title: "Jimmy Wu | Marketing & AI-Powered Content",
   description:
     "Portfolio of Jimmy Wu, a bilingual (English/Mandarin) Global Business Marketing student at Fordham Gabelli, creating AI-powered content that grows audiences.",
-  email: "TODO-your-email@fordham.edu", // TODO: your email
-  linkedin: "https://www.linkedin.com/in/TODO", // TODO: your LinkedIn URL
-  instagram: "https://www.instagram.com/TODO", // TODO: your personal Instagram (or remove)
+  email: "cwu127@fordham.edu",
+  linkedin: "https://www.linkedin.com/in/chuan-hsi-jimmy-wu/",
+  instagram: "", // optional: your personal Instagram URL. Leave "" to hide the Instagram links.
   resume: "/resume.pdf", // TODO: replace /public/resume.pdf with your real resume
 };
 
@@ -31,7 +31,7 @@ export const hero = {
     "Bilingual marketer turning AI-powered content into real audience growth, in English and 中文.",
   // Option 2: "I create scroll-stopping content with AI tools, and tell brand stories in two languages."
   // Option 3: "Marketing student at the intersection of creativity, AI, and cross-cultural storytelling."
-  headshot: "/images/headshot.svg", // TODO: add your photo, e.g. /images/headshot.jpg (square works best)
+  headshot: "/images/headshot.jpg", // portrait (4:5) photo
   headshotAlt: "Portrait of Jimmy Wu",
 };
 
@@ -39,15 +39,16 @@ export const hero = {
 export const about = {
   paragraphs: [
     "I'm a Global Business Marketing major with a Music minor at Fordham University's Gabelli School of Business, graduating in May 2027. I'm drawn to the part of marketing where data meets storytelling: figuring out what an audience actually cares about, then making content they want to stop and watch.",
-    "Lately that's meant experimenting with AI-powered content creation. At FenDoDo Education I use tools like Higgsfield AI to produce short-form reels that grow our Instagram audience, and I'm always testing what turns a view into a follower.",
-    "I'm fully bilingual in English and Mandarin, which lets me build campaigns that speak naturally to audiences in both the U.S. and Taiwan. My Music minor keeps my creative side sharp; it's taught me a lot about rhythm, pacing, and emotion, which turns out to matter just as much in a 15-second reel. TODO: add one personal detail (hometown, instrument you play, a hobby).",
+    "Lately that's meant building AI into everything I make. At FenDoDo Education I produce short-form reels with Higgsfield AI to grow our Instagram audience, and at GreenPortfolio I turned blog posts into YouTube videos with Google Vids and used Gemini and Perplexity to speed up SEO and research.",
+    "I'm a native speaker of both English and Mandarin, which lets me build campaigns that speak naturally to audiences in the U.S. and Taiwan. My Music minor keeps my creative side sharp: I play piano, sing with the F-Sharps a cappella group and the Fordham University Choir, and produce music in FL Studio. It's taught me a lot about rhythm, pacing, and emotion, which matter just as much in a 15-second reel. I'm especially excited about music and sports marketing.",
   ],
   // Small facts shown beside the bio
   facts: [
-    { label: "Based in", value: "New York, NY" }, // TODO: confirm
-    { label: "Languages", value: "English · Mandarin" },
-    { label: "Graduating", value: "May 2027" },
-    { label: "Open to", value: "Summer 2027 marketing internships" }, // TODO: confirm
+    { label: "Based in", value: "Brooklyn, NY" },
+    { label: "Languages", value: "English · Mandarin (both native)" },
+    { label: "Graduating", value: "May 2027 · GPA 3.67" },
+    { label: "Honors", value: "Woolworth Award · Dean's List · Consulting Cup Finalist" },
+    { label: "Open to", value: "Marketing internships & full-time roles" }, // TODO: confirm
   ],
 };
 
@@ -68,35 +69,62 @@ export const experience: Experience[] = [
     role: "Business Development Representative",
     company: "FenDoDo Education",
     companyUrl: "https://www.instagram.com/fendodo_/", // TODO: company website if there is one
-    location: "Taipei, Taiwan (Remote)", // TODO: confirm
+    location: "Taipei, Taiwan",
     dates: "July 2025 – Present",
-    summary: "Online college counseling platform helping students in Taiwan apply to universities abroad.",
+    summary: "Online college counseling platform.",
     bullets: [
-      "Grew the company Instagram (@fendodo_) by producing AI-generated reels with Higgsfield AI. TODO: add result",
-      "TODO: e.g. Planned a weekly content calendar in English and Mandarin targeting high-school students and parents",
-      "TODO: e.g. Generated X qualified leads for counseling consultations through social and outreach",
-      "TODO: e.g. Tracked reel performance (reach, saves, follows) to refine hooks and posting times",
+      "Grew FenDoDo's Instagram (@fendodo_) with AI-generated reels made in Higgsfield AI. TODO: add result (e.g. +X% followers)",
+      "Generated $4,052 in new client revenue through social media outreach and referral initiatives",
+      "Launched FenDoDo's Referral Program, an incentive system that boosted client acquisition",
+      "Created 2 Google Ads campaigns for the U.S. and Taiwan markets to maximize impressions and conversions",
+      "Promoted tutors with Canva profiles and strengthened client engagement through tailored services",
     ],
     metrics: [
-      { value: "+XX%", label: "Follower growth (TODO)" },
-      { value: "XXK", label: "Total reel views (TODO)" },
+      { value: "$4,052", label: "New client revenue" },
+      { value: "2", label: "Google Ads campaigns (U.S. & Taiwan)" },
     ],
   },
   {
     role: "Marketing Intern",
     company: "GreenPortfolio",
     companyUrl: "https://greenportfolio.co", // TODO: confirm company URL
-    location: "TODO: City, State / Remote",
+    location: "New York, NY",
     dates: "January – September 2026",
-    summary: "Sustainable investing platform. TODO: confirm one-line company description.",
+    summary: "Climate-conscious investing and financial advice platform.", // TODO: confirm wording
     bullets: [
-      "Wrote blog posts for the company website. TODO: number of posts and topics",
-      "TODO: e.g. Researched keywords to improve search visibility of articles",
-      "TODO: e.g. Repurposed blog content into social posts and newsletter snippets",
+      "Produced 8 blog posts on climate-conscious investing (fiduciary advisors, advisor fees, choosing a climate-savvy advisor, midlife wealth planning), driving a 28% increase in organic web traffic",
+      "Turned blog posts into 5 YouTube videos with Google Vids, refining AI voiceovers and aligning each scene with brand color guidelines",
+      "Integrated generative AI tools (Gemini, Perplexity) into SEO optimization, content creation, lead sourcing, and competitive research",
     ],
     metrics: [
-      { value: "XX", label: "Blog posts published (TODO)" },
-      { value: "X,XXX", label: "Article page views (TODO)" },
+      { value: "+28%", label: "Organic web traffic" },
+      { value: "8", label: "Blog posts published" },
+    ],
+  },
+  {
+    role: "Team Member, Consulting Cup Finalist",
+    company: "Gabelli School of Business Consulting Cup",
+    location: "New York, NY",
+    dates: "September – December 2024",
+    summary: "Annual competition where student teams consult for an assigned company and propose a solution.",
+    bullets: [
+      "Placed 2nd out of 27 teams (150 students); one of three teams selected to present to five industry judges",
+      "Analyzed T-Mobile's consumer demographics and proposed \"PorT,\" a digital-detox device, to capture a growth opportunity",
+    ],
+    metrics: [
+      { value: "2nd", label: "Out of 27 teams" },
+      { value: "150", label: "Students competing" },
+    ],
+  },
+  {
+    role: "Artist Management & Promotion Intern",
+    company: "Mezz Entertainment",
+    location: "New York, NY",
+    dates: "August – December 2024",
+    summary: "Music artist management and promotion.",
+    bullets: [
+      "Sent 5 outreach pitches weekly promoting Mezz artists to clubs, bars, and venues via email and social media",
+      "Researched venues and pitched artists to bookers, building research and marketing skills",
     ],
   },
 ];
@@ -158,11 +186,11 @@ export const caseStudies: CaseStudy[] = [
       "Wrote hooks and captions in Mandarin and English, and tested posting times and formats.",
       "TODO: e.g. Reviewed Instagram Insights weekly and doubled down on the formats with the best save and follow rates.",
     ],
-    tools: ["Higgsfield AI", "Instagram Insights", "CapCut", "Canva", "ChatGPT"], // TODO: confirm tools
+    tools: ["Higgsfield AI", "Instagram", "Instagram Insights", "Canva", "Google Ads"], // TODO: confirm tools
     results: [
+      { value: "$4,052", label: "New client revenue from social & referrals" },
       { value: "+XX%", label: "Follower growth (TODO)" },
       { value: "XXK", label: "Reel views (TODO)" },
-      { value: "X.X%", label: "Avg. engagement rate (TODO)" },
       { value: "XX", label: "Reels produced (TODO)" },
     ],
     resultsNote: "TODO: add timeframe, e.g. \"From July 2025 to November 2026.\"",
@@ -184,34 +212,40 @@ export const caseStudies: CaseStudy[] = [
     slug: "greenportfolio-content",
     title: "Content Marketing at GreenPortfolio",
     client: "GreenPortfolio",
-    role: "Blog writing, SEO research",
+    role: "Blog writing, SEO, AI video production",
     timeframe: "Jan – Sep 2026",
     summary:
-      "Writing clear, search-friendly blog posts that explain sustainable investing to everyday readers.",
+      "Eight search-friendly blog posts on climate-conscious investing, turned into YouTube videos with AI, that lifted organic web traffic by 28%.",
     cover: "/images/case-greenportfolio-cover.svg", // TODO: replace with a real image
     coverAlt: "GreenPortfolio blog article previews",
     tags: ["Content Marketing", "SEO", "Blog"],
     challenge: [
-      "Sustainable investing can feel technical and intimidating. GreenPortfolio needed approachable content that builds trust and brings new readers to the website.",
+      "Climate-conscious investing can feel technical and intimidating. GreenPortfolio needed approachable content that builds trust and brings new readers to the website.",
       "TODO: add context, e.g. the blog had few recent posts or low search traffic.",
     ],
     approach: [
-      "Researched topics and keywords that readers were actually searching for.",
-      "Wrote and edited blog posts that turn complex ideas into plain-language explanations.",
-      "TODO: e.g. Collaborated with the team on editorial calendar and on-page SEO.",
+      "Researched topics and keywords readers were actually searching for, using Gemini and Perplexity to speed up SEO, competitive, and industry research.",
+      "Wrote 8 plain-language blog posts on fiduciary advisors, advisor fees, choosing a climate-savvy advisor, and midlife wealth planning.",
+      "Repurposed the posts into 5 YouTube videos with Google Vids, refining AI voiceovers for smooth transitions and matching every scene to brand color guidelines.",
     ],
-    tools: ["WordPress", "Google Docs", "Google Analytics", "Grammarly", "ChatGPT"], // TODO: confirm tools
+    tools: ["Google Vids", "Gemini", "Perplexity", "YouTube"], // TODO: add any others (e.g. WordPress, Google Analytics)
     results: [
-      { value: "XX", label: "Posts published (TODO)" },
-      { value: "X,XXX", label: "Page views (TODO)" },
-      { value: "X:XX", label: "Avg. time on page (TODO)" },
+      { value: "+28%", label: "Organic web traffic" },
+      { value: "8", label: "Blog posts published" },
+      { value: "5", label: "YouTube videos produced" },
+    ],
+    resultsNote: "January – September 2026.",
+    videos: [
+      // TODO: paste the ID from youtube.com/watch?v=THIS_PART
+      { title: "TODO: GreenPortfolio video title", platform: "youtube", id: "TODO" },
+      { title: "TODO: GreenPortfolio video title", platform: "youtube", id: "TODO" },
     ],
     linksHeading: "Writing samples",
     links: [
       // TODO: replace with your real articles
-      { title: "TODO: Blog post title one", description: "One-sentence summary of the article.", url: "https://example.com" },
-      { title: "TODO: Blog post title two", description: "One-sentence summary of the article.", url: "https://example.com" },
-      { title: "TODO: Blog post title three", description: "One-sentence summary of the article.", url: "https://example.com" },
+      { title: "TODO: exact title (fiduciary advisors post)", description: "TODO: one-sentence summary.", url: "https://example.com" },
+      { title: "TODO: exact title (advisor fees post)", description: "TODO: one-sentence summary.", url: "https://example.com" },
+      { title: "TODO: exact title (choosing a climate-savvy advisor post)", description: "TODO: one-sentence summary.", url: "https://example.com" },
     ],
   },
 ];
@@ -231,24 +265,32 @@ export const socialPosts: { image: string; alt: string; caption?: string; url?: 
 
 /* ---------- Writing (blog posts) ------------------------------------- */
 export const writing: { title: string; excerpt: string; date: string; publication: string; url: string }[] = [
+  // You wrote 8 posts. Add the rest by copying a block.
   {
-    title: "TODO: Blog post title one",
-    excerpt: "TODO: A two-sentence excerpt that makes a reader want to click through and read the full article.",
-    date: "2026-08-15", // format: YYYY-MM-DD
+    title: "TODO: exact title (fiduciary advisors post)",
+    excerpt: "TODO: a two-sentence excerpt that makes a reader want to click through.",
+    date: "2026-02-01", // TODO: real date (YYYY-MM-DD)
     publication: "GreenPortfolio Blog",
     url: "https://example.com", // TODO
   },
   {
-    title: "TODO: Blog post title two",
-    excerpt: "TODO: A two-sentence excerpt that makes a reader want to click through and read the full article.",
-    date: "2026-05-02",
+    title: "TODO: exact title (advisor fees post)",
+    excerpt: "TODO: a two-sentence excerpt that makes a reader want to click through.",
+    date: "2026-03-01", // TODO: real date (YYYY-MM-DD)
     publication: "GreenPortfolio Blog",
     url: "https://example.com", // TODO
   },
   {
-    title: "TODO: Blog post title three",
-    excerpt: "TODO: A two-sentence excerpt that makes a reader want to click through and read the full article.",
-    date: "2026-02-20",
+    title: "TODO: exact title (choosing a climate-savvy advisor post)",
+    excerpt: "TODO: a two-sentence excerpt that makes a reader want to click through.",
+    date: "2026-05-01", // TODO: real date (YYYY-MM-DD)
+    publication: "GreenPortfolio Blog",
+    url: "https://example.com", // TODO
+  },
+  {
+    title: "TODO: exact title (midlife wealth planning post)",
+    excerpt: "TODO: a two-sentence excerpt that makes a reader want to click through.",
+    date: "2026-07-01", // TODO: real date (YYYY-MM-DD)
     publication: "GreenPortfolio Blog",
     url: "https://example.com", // TODO
   },
@@ -259,26 +301,26 @@ export const writing: { title: string; excerpt: string; date: string; publicatio
    Vimeo, or Instagram and paste the ID here (see the Video type above).
    --------------------------------------------------------------------- */
 export const videos: Video[] = [
-  { title: "TODO: Video title", platform: "youtube", id: "TODO", description: "TODO: one line about this video." },
-  { title: "TODO: Video title", platform: "instagram", id: "TODO", description: "TODO: one line about this video." },
+  { title: "TODO: GreenPortfolio video title", platform: "youtube", id: "TODO", description: "Blog post turned into a YouTube video with Google Vids and an AI voiceover." },
+  { title: "TODO: FenDoDo reel title", platform: "instagram", id: "TODO", description: "AI-generated reel made with Higgsfield AI for @fendodo_." },
 ];
 
 /* ---------- Skills & Tools ------------------------------------------- */
 export const skills: { group: string; items: string[] }[] = [
   {
     group: "Marketing",
-    items: ["Social Media Strategy", "Content Marketing", "Business Development", "Market Research", "SEO Basics", "Copywriting"],
+    items: ["Digital Marketing", "Social Media Marketing", "Content Marketing", "SEO", "Google Ads", "Business Development", "Referral Programs", "Market Research", "Consumer Behavior", "Excel"],
   },
   {
     group: "Content & Design",
-    items: ["Short-form Video", "Canva", "CapCut", "Blog Writing", "Instagram Insights"], // TODO: confirm
+    items: ["Short-form Video", "Blog Writing", "Canva", "Google Vids", "Instagram", "FL Studio (Music Production)"],
   },
   {
     group: "AI Tools",
-    items: ["Higgsfield AI", "ChatGPT", "Claude"], // TODO: confirm
+    items: ["Higgsfield AI", "Gemini", "Perplexity", "AI Voiceover (Google Vids)"],
   },
   {
     group: "Languages",
-    items: ["English (Fluent)", "Mandarin Chinese (Native)"], // TODO: confirm levels
+    items: ["English (Native)", "Mandarin Chinese (Native)"],
   },
 ];

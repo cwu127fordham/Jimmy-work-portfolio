@@ -39,7 +39,7 @@ const personJsonLd = {
   description: hero.positioning,
   alumniOf: "Fordham University, Gabelli School of Business",
   knowsLanguage: ["English", "Mandarin Chinese"],
-  sameAs: [site.linkedin, site.instagram],
+  sameAs: [site.linkedin, site.instagram].filter(Boolean),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
